@@ -311,11 +311,36 @@ p {
 }
 
 .whatwedo-item {
+  position: relative;
   margin-right: 30px;
 }
 
 .whatwedo-item:last-child {
   margin-right: 0;
+}
+
+.whatwedo-item-desc {
+  display: flex;
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  right: 0;
+  bottom: 0;
+
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
 }
 /* our team*/
 
