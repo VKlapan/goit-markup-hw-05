@@ -759,6 +759,12 @@ p {
   transform: translateX(-50%);
 
   background-color: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+
+  transition: opacity 250ms, visibility 250ms;
 }
 
 .modal-window {
@@ -797,4 +803,10 @@ p {
   width: 11px;
   height: 11px;
   fill: #000000;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
