@@ -112,7 +112,19 @@ p {
 
 .header-nav-item,
 .header-contacts-item {
+  position: relative;
   margin-right: 50px;
+}
+
+.link.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -35px;
+  display: block;
+  width: 100%;
+  height: 4px;
+  color: var(--nav-hover-color);
 }
 
 .header-nav-item:last-child,
